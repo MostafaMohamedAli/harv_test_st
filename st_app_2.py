@@ -147,7 +147,7 @@ with col2:
 
 # Prediction logic
 if st.button("Predict Survival"):
-    input_data = pd.dataframe([[pclass, sex, age, fare, family_size]],
+    input_data = pd.DataFrame([[pclass, sex, age, fare, family_size]],
                                 columns=['Pclass', 'Sex', 'Age', 'Fare', 'FamilySize'])
 
     processed_data = preprocessor.transform(input_data)
